@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>REYZER | Streetwear Colombia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Skip to content -->
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-link" href="#">
+          <span class="brand-mark" aria-hidden="true">RZ</span>
+          <span class="brand-name">REYZER</span>
+          <span class="brand-sub">Streetwear Colombia</span>
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#colecciones">Colecciones</a>
+        <a href="#productos">Productos</a>
+        <a href="#envios">Envíos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="icon-btn" for="modal-login" role="button" tabindex="0" aria-label="Abrir login">
+          <span class="icon" aria-hidden="true">👤</span>
+          <span class="icon-text">Login</span>
+        </label>
+
+        <a class="icon-btn" href="#carrito" aria-label="Ver carrito">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="icon-text">Carrito</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <input class="modal-toggle" type="checkbox" id="modal-login" />
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-login">
+    <label class="modal-backdrop" for="modal-login" aria-label="Cerrar"></label>
+
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h2 id="titulo-login">Cuenta</h2>
+        <label class="close-btn" for="modal-login" aria-label="Cerrar">✕</label>
+      </div>
+
+      <div class="tabs" aria-label="Login o Registro">
+        <input type="radio" name="tab-auth" id="tab-login" checked />
+        <input type="radio" name="tab-auth" id="tab-register" />
+
+        <div class="tab-buttons">
+          <label for="tab-login">Iniciar sesión</label>
+          <label for="tab-register">Registrarse</label>
+        </div>
+
+        <section class="tab-content login" aria-labelledby="tab-login">
+          <form class="auth-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Correo</span>
+              <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Contraseña</span>
+              <input type="password" name="password" placeholder="••••••••" required />
+            </label>
+
+            <button class="btn btn-primary" type="submit">Entrar</button>
+
+            <p class="help-text">
+              ✅ UI demo (sin backend). Para una tienda real, conectarías autenticación.
+            </p>
+          </form>
+        </section>
+
+        <section class="tab-content register" aria-labelledby="tab-register">
+          <form class="auth-form" action="#" method="post">
+            <label class="field">
+              <span class="field-label">Nombre</span>
+              <input type="text" name="name" placeholder="Tu nombre" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Correo</span>
+              <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Contraseña</span>
+              <input type="password" name="password" placeholder="Crea tu contraseña" required />
+            </label>
+
+            <button class="btn btn-primary" type="submit">Crear cuenta</button>
+
+            <p class="help-text">
+              📦 Ideal para envíos a Colombia (dirección + barrio + departamento).
+            </p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="pill">⚡ Nuevas llegadas</p>
+          <h1>Streetwear oscuro, limpio y con actitud.</h1>
+          <p class="lead">
+            REYZER trae prendas urbanas (pantalones, camisetas, hoodies y zapatos)
+            con envíos a Colombia, pesos por producto y precios claros.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#productos">Ver productos</a>
+            <a class="btn btn-ghost" href="#envios">Ver envíos Colombia</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-card">🚚 Envío a todo Colombia</div>
+            <div class="trust-card">⚖️ Peso por prenda</div>
+            <div class="trust-card">💳 Pagos seguros (demo)</div>
+          </div>
+        </div>
+
+    
+        <div class="hero-carousel" aria-label="Carrusel de imágenes">
+          <input type="radio" name="car" id="slide1" checked />
+          <input type="radio" name="car" id="slide2" />
+          <input type="radio" name="car" id="slide3" />
+
+          <div class="slides">
+            <figure class="slide s1">
+              <div class="img" aria-hidden="true"></div>
+              <figcaption>
+                <span class="slide-tag">Hoodies</span>
+                <img src="img/hodies.jpg" alt="#">
+                <strong>Fresco + oversize</strong>
+                <span class="slide-desc">Tela suave • look nocturno</span>
+              </figcaption>
+            </figure>
+
+            <figure class="slide s2">
+              <div class="img" aria-hidden="true"></div>
+              <figcaption>
+                <span class="slide-tag">Pantalones</span>
+                <img src="img/pantalon y2k.jpg" alt="#">
+                <strong>Fit urbano</strong>
+                <span class="slide-desc">Comodidad para el día a día</span>
+              </figcaption>
+            </figure>
+
+            <figure class="slide s3">
+              <div class="img" aria-hidden="true"></div>
+              <figcaption>
+                <span class="slide-tag">Zapatos</span>
+                <img src="img/zapatos.webp" alt="#">
+                <strong>Grip y estilo</strong>
+                <span class="slide-desc">Base resistente • diario</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-controls">
+            <label for="slide1" aria-label="Ir al slide 1"></label>
+            <label for="slide2" aria-label="Ir al slide 2"></label>
+            <label for="slide3" aria-label="Ir al slide 3"></label>
+          </div>
+
+          <div class="carousel-bullets" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="colecciones" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Colecciones</h2>
+          <p>Busca por tipo de prenda. Todo con precios en COP y pesos aproximados.</p>
+        </header>
+
+        <div class="grid-4">
+          <a class="collection-card" href="#productos">
+            <span class="collection-emoji" aria-hidden="true">👖</span>
+            <span class="collection-title">Pantalones</span>
+            <span class="collection-meta">Casual / Street</span>
+          </a>
+          <a class="collection-card" href="#productos">
+            <span class="collection-emoji" aria-hidden="true">👕</span>
+            <span class="collection-title">Camisas & Tops</span>
+            <span class="collection-meta">Cotton • Oversize</span>
+          </a>
+          <a class="collection-card" href="#productos">
+            <span class="collection-emoji" aria-hidden="true">🧥</span>
+            <span class="collection-title">Hoodies</span>
+            <span class="collection-meta">Suave • Calidez</span>
+          </a>
+          <a class="collection-card" href="#productos">
+            <span class="collection-emoji" aria-hidden="true">👟</span>
+            <span class="collection-title">Zapatos</span>
+            <span class="collection-meta">Grip • Urbana</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="productos" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Productos destacados</h2>
+          <p>
+            Pesos aproximados para calcular envíos en Colombia. (UI sin backend)
+          </p>
+        </header>
+
+        <div class="filters" aria-label="Navegación por categorías (visual)">
+          <span class="filter-pill">👖 Pantalones</span>
+          <span class="filter-pill">👕 Tops</span>
+          <span class="filter-pill">🧥 Hoodies</span>
+          <span class="filter-pill">👟 Zapatos</span>
+        </div>
+
+        <!-- Category: Pants -->
+        <div class="category" aria-label="Pantalones">
+          <h3>👖 Pantalones</h3>
+          <div class="grid-4">
+            <article class="product">
+              <div class="product-img img-pants-1" role="img" aria-label="Pantalón REYZER 01"></div>
+              <h4>Pantalón NoirFlex 01</h4>
+              <p class="price">COP $149.900</p>
+              <p class="meta">⚖️ Peso: 0.65 kg</p>
+              <p class="desc">Tejido resistente • caída limpia.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-pants-2" role="img" aria-label="Pantalón REYZER 02"></div>
+              <h4>Pantalón UrbanCut 02</h4>
+              <p class="price">COP $169.900</p>
+              <p class="meta">⚖️ Peso: 0.72 kg</p>
+              <p class="desc">Fit street • cómodo todo el día.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-pants-3" role="img" aria-label="Pantalón REYZER 03"></div>
+              <h4>Pantalón NightCargo 03</h4>
+              <p class="price">COP $189.900</p>
+              <p class="meta">⚖️ Peso: 0.80 kg</p>
+              <p class="desc">Bolsillos cargo • vibe nocturna.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-pants-4" role="img" aria-label="Pantalón REYZER 04"></div>
+              <h4>Pantalón StoneSlim 04</h4>
+              <p class="price">COP $159.900</p>
+              <p class="meta">⚖️ Peso: 0.66 kg</p>
+              <p class="desc">Slim moderno • textura premium.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category: Shirts -->
+        <div class="category" aria-label="Camisas y tops">
+          <h3>👕 Camisas & Tops</h3>
+          <div class="grid-4">
+            <article class="product">
+              <div class="product-img img-shirt-1" role="img" aria-label="Camiseta REYZER 01"></div>
+              <h4>Camiseta MonoInk 01</h4>
+              <p class="price">COP $89.900</p>
+              <p class="meta">⚖️ Peso: 0.30 kg</p>
+              <p class="desc">Algodón suave • estampado sutil.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shirt-2" role="img" aria-label="Camiseta REYZER 02"></div>
+              <h4>Top Oversize NoirLabel 02</h4>
+              <p class="price">COP $99.900</p>
+              <p class="meta">⚖️ Peso: 0.32 kg</p>
+              <p class="desc">Oversize • drapeado limpio.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shirt-3" role="img" aria-label="Camiseta REYZER 03"></div>
+              <h4>Camisa Minimal Weave 03</h4>
+              <p class="price">COP $129.900</p>
+              <p class="meta">⚖️ Peso: 0.38 kg</p>
+              <p class="desc">Tela ventilada • look urbano.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shirt-4" role="img" aria-label="Camiseta REYZER 04"></div>
+              <h4>Top Graphic Line 04</h4>
+              <p class="price">COP $109.900</p>
+              <p class="meta">⚖️ Peso: 0.31 kg</p>
+              <p class="desc">Gráfica lineal • estilo nocturno.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category: Hoodies -->
+        <div class="category" aria-label="Hoodies">
+          <h3>🧥 Hoodies</h3>
+          <div class="grid-4">
+            <article class="product">
+              <div class="product-img img-hoodie-1" role="img" aria-label="Hoodie REYZER 01"></div>
+              <h4>Hoodie Fleece Noir 01</h4>
+              <p class="price">COP $229.900</p>
+              <p class="meta">⚖️ Peso: 0.85 kg</p>
+              <p class="desc">Interior térmico • alta durabilidad.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-hoodie-2" role="img" aria-label="Hoodie REYZER 02"></div>
+              <h4>Hoodie Oversize Halo 02</h4>
+              <p class="price">COP $259.900</p>
+              <p class="meta">⚖️ Peso: 0.92 kg</p>
+              <p class="desc">Volumen perfecto • capucha firme.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-hoodie-3" role="img" aria-label="Hoodie REYZER 03"></div>
+              <h4>Hoodie NightZip 03</h4>
+              <p class="price">COP $279.900</p>
+              <p class="meta">⚖️ Peso: 1.02 kg</p>
+              <p class="desc">Cierre full • feel premium.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-hoodie-4" role="img" aria-label="Hoodie REYZER 04"></div>
+              <h4>Hoodie StoneDust 04</h4>
+              <p class="price">COP $249.900</p>
+              <p class="meta">⚖️ Peso: 0.88 kg</p>
+              <p class="desc">Textura especial • negro con detalle.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category: Shoes -->
+        <div class="category" aria-label="Zapatos">
+          <h3>👟 Zapatos</h3>
+          <div class="grid-4">
+            <article class="product">
+              <div class="product-img img-shoes-1" role="img" aria-label="Zapatos REYZER 01"></div>
+              <h4>Runner Grip 01</h4>
+              <p class="price">COP $249.900</p>
+              <p class="meta">⚖️ Peso: 0.95 kg</p>
+              <p class="desc">Suela con agarre • diario.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shoes-2" role="img" aria-label="Zapatos REYZER 02"></div>
+              <h4>Sneaker NightRunner 02</h4>
+              <p class="price">COP $279.900</p>
+              <p class="meta">⚖️ Peso: 1.05 kg</p>
+              <p class="desc">Diseño limpio • confort superior.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shoes-3" role="img" aria-label="Zapatos REYZER 03"></div>
+              <h4>Zapato UrbanStep 03</h4>
+              <p class="price">COP $299.900</p>
+              <p class="meta">⚖️ Peso: 1.10 kg</p>
+              <p class="desc">Base resistente • estilo street.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+
+            <article class="product">
+              <div class="product-img img-shoes-4" role="img" aria-label="Zapatos REYZER 04"></div>
+              <h4>Lowtop MonoWave 04</h4>
+              <p class="price">COP $259.900</p>
+              <p class="meta">⚖️ Peso: 1.00 kg</p>
+              <p class="desc">Minimal • look premium nocturno.</p>
+              <a class="btn btn-sm btn-primary" href="#carrito">Agregar</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart (static UI) -->
+    <section id="carrito" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>🛒 Carrito (demo)</h2>
+        
+        </header>
+
+        <div class="cart">
+          <div class="cart-left">
+            <div class="cart-item">
+              <div class="cart-thumb img-cart-1" aria-hidden="true"></div>
+              <div>
+                <strong>Pantalón NoirFlex 01</strong>
+                <div class="muted">Talla: M • Cantidad: 1</div>
+              </div>
+              <div class="cart-right">
+                <div class="cart-price">COP $149.900</div>
+                <div class="cart-muted">Peso: 0.65 kg</div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-thumb img-cart-2" aria-hidden="true"></div>
+              <div>
+                <strong>Hoodie Fleece Noir 01</strong>
+                <div class="muted">Talla: L • Cantidad: 1</div>
+              </div>
+              <div class="cart-right">
+                <div class="cart-price">COP $229.900</div>
+                <div class="cart-muted">Peso: 0.85 kg</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cart-summary" aria-label="Resumen de compra">
+            <h3>Resumen</h3>
+            <div class="sum-row">
+              <span>Subtotal</span>
+              <span>COP $379.800</span>
+            </div>
+            <div class="sum-row">
+              <span>Envío (estimado Colombia)</span>
+              <span>COP $28.000</span>
+            </div>
+            <div class="sum-row total">
+              <span>Total</span>
+              <span>COP $407.800</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <label class="field">
+              <span class="field-label">Departamento</span>
+              <select name="depto">
+                <option>Bogotá D.C.</option>
+                <option>Antioquia</option>
+                <option>Valle del Cauca</option>
+                <option>Santander</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Ciudad / Zona</span>
+              <input type="text" placeholder="Ej: Medellín - Laureles" />
+            </label>
+
+            <a class="btn btn-primary btn-full" href="#pago">Continuar a pago</a>
+            <p class="help-text">📌 Demo UI: botones no procesan pagos.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shipping Colombia -->
+    <section id="envios" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>🚚 Envíos a Colombia</h2>
+          <p>Transparencia: tiempos estimados, pesos y cobertura.</p>
+        </header>
+
+        <div class="grid-3">
+          <div class="info-card">
+            <h3>📦 Cobertura</h3>
+            <p>Enviamos a todo el país (operadores logísticos nacionales).</p>
+            <p class="muted">Incluye principales ciudades y zonas urbanas.</p>
+          </div>
+
+          <div class="info-card">
